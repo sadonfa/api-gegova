@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-y!78)id!(l5zr^q@y$vcyfsaufs680#g0a@0v#cq+2)y8w1i4_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -44,8 +44,9 @@ INSTALLED_APPS = [
     'django_ckeditor_5',
     'core',
     'about',
-    'portafolio'
-
+    'portafolio',
+    'curriculum',
+    'gallery'
 ]
 
 MIDDLEWARE = [

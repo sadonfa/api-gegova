@@ -1,0 +1,209 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* background-color: antiquewhite; */
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+
+.info_home{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.info_home .info{
+    width: 70%
+}
+
+.info_home .info h3{
+    font-family: "VarelaRound" ;
+    font-size: 18px ;
+    /* margin-bottom: -2px; */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.info_home .info h1{
+    font-family: "VarelaRound" ;
+    font-size: 40px ;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    font-weight: bold;
+
+}
+
+.info_home .info span{
+    color: #ffcc00;
+}
+
+
+.profesion{
+    /* display: flex; */
+    width: 68%;
+    background-color: #ffcc00;
+    border-radius: 5px;
+    color: black;
+    font-size: 14px;
+    padding: 10px 12px;
+    font-family: "VarelaRound";
+    font-weight: 300;
+}
+
+.info_home .info p{
+    font-family: "Montserrat" ;
+    font-size: 20px ;
+    line-height: 28px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.photo_home{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    /* border: 1px solid blue; */
+}
+
+.photo_home img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* MENU  */
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    background-color: #ffcc00;
+    position: absolute;
+    border-radius: 10px;
+    right: 15px;
+    top: 28%;
+}
+
+.nav li{
+    list-style: none;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.nav li i{
+    font-size: 20px;
+}
+
+.nav li a{
+    text-decoration: none;
+    color: #000;
+    transition: all 200ms;
+}
+
+.nav li a:hover{
+    color: #fff;
+}
+
+
+
+.lateral{
+    width: 20%;
+    height: 100%;
+    background-color: #ffcc00;
+    color: #000;
+}
+
+.lateral .photo_lateral {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    display: inline-block;
+    /* border: 1px solid green; */
+}
+
+.lateral .photo_lateral img{
+    width: 100%;
+    height: 100%;   
+    object-fit: cover;
+    object-position: center center;
+}
+
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    background-color: #ccc;
+    /* border: 1px solid red; */
+}
+
+
+.cont .cont_info {  
+    width: 85%;
+    height: 90vh;
+    margin: 0px auto;
+    /* border: 1px solid red; */
+}
+
+.menu {
+    text-align: center;
+    margin-top: 45px;
+}
+
+.menu li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "VarelaRound";
+    font-size: 18px;
+}
+
+.menu li a {
+    font-family: "VarelaRound";
+    text-decoration: none;
+    color: #000;
+    transition: all 200ms;
+}
+
+.menu li a:hover {
+    color: #fff; 
+}
+
+.cont_info h1{
+    display: block;
+    text-align: center;
+    border: 1px solid #bbb;
+    font-family: "VarelaRound";
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.cont_info h3{
+    font-family: "Montserrat";
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.cont_info strong{
+    font-family: "Montserrat Bold";
+}
+
+.cont_info p{
+    font-family: "Montserrat";
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 24px;
+}

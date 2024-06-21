@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "VarelaRound" ;
+    src: url("../fonts/VarelaRound-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat/static/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url("../fonts/Montserrat/static/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family:"Inter Regular";
+    src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf");
+}

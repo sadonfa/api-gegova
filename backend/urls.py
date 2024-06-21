@@ -26,6 +26,7 @@ from drf_yasg import openapi
 
 from about.api.router import router_about
 from portafolio.api.router import router_portafolio
+# from core import views
 
 schema_view = get_schema_view(
     openapi.Info(
@@ -47,8 +48,15 @@ urlpatterns = [
     path('redoc/', schema_view.with_ui('redoc',
          cache_timeout=0), name='schema-redoc'),
     path('api/', include(router_about.urls)),
-    path('api/', include(router_portafolio.urls))
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    path('api/', include(router_portafolio.urls)),
+    
+    #PRINCIPAL
+    path('', include('core.urls') ),
+    path('', include('about.urls') ),
+    path('', include('portafolio.urls')),
+    path('', include('curriculum.urls')),
+    path('', include('gallery.urls'))
+] 
 
 
 

@@ -1,0 +1,20 @@
+.btn{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-family: "VarelaRound";
+    font-weight: bold;
+    transition: all 200ms;
+}
+
+.btn:hover{
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-yell{
+    background-color: #ffcc00;
+    color: black;
+}
+

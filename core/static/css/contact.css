@@ -1,0 +1,47 @@
+
+.info_contact{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 65px;
+    margin-bottom: 65px;
+  }
+
+  .info_contact .desktop,
+  .info_contact .tel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+  }
+
+  .info_contact i{
+    margin-right: 30px;
+    font-size: 80px;
+  }
+
+  .info_contact li{
+    margin-top: 7px;
+    margin-bottom: 7px;
+    list-style: none;
+    font-family: "Montserrat";
+  }
+
+  .span_cont{
+    display: block;
+    position: relative;
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+
+  .det_cont{
+    margin-bottom: 35px;
+
+  }
+
+  .cont_thank{
+    text-align: center;
+    font-size: 26px !important;
+    font-family: "Montserrat Bold" !important;
+    text-transform: uppercase;
+    /* margin-top: 40px; */
+  }

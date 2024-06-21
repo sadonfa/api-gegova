@@ -1,0 +1,34 @@
+{% extends 'layouts/home.html' %}
+
+{% block title %} {{title}} {% endblock  %}
+
+{% block content %}
+{% load static %}
+
+<div class="info_home">
+    <div class="info">
+      <h3>Hi there!</h3>
+      <h1>I'M <span>GERLIN</span></h1>
+
+      <div class="profesion">
+        <strong>Administrador de Sistemas / Desarrollador Web </strong>
+      </div>
+
+      <p>
+        Hola soy <strong>Gerlin Gonzalez</strong> y soy Desarrollador Web en
+        Cartagena-Bolivar, y ofrezco mis servicios de
+        <strong>programador y desarrollador</strong> en todo tipo de
+        proyecto web.
+      </p>
+      <p>
+        Te ayudo a crear tu sitio o aplicacion web, para tener mas visibilidad 
+        y relevancia en internet. <Link to="/contacto"> Contacta conmigo </Link>
+      </p>
+      <button class="btn btn-yell">ABOUT ME</button>
+    </div>
+  </div>
+  <div class="photo_home">
+    <img src="{% static 'img/Gerlin.jpg' %}" alt="Gerlin Gonzalez" />
+  </div>
+
+  {% endblock  %}

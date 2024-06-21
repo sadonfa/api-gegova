@@ -1,0 +1,138 @@
+
+.menu_category{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.menu_category ul {
+    display: flex;
+    justify-content: center;
+}
+
+.menu_category ul li{
+    list-style: none;
+    text-transform: uppercase;
+    font-family: "Montserrat Bold";
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.menu_category ul li a{
+    text-decoration: none;
+    color: #000;
+    transition: all 300ms;
+}
+
+.menu_category ul li a:hover{
+    color: #ffcc00;
+}
+
+/* ITEM DE PORTAFOLIO */
+
+.works{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid yellow; */
+
+  }
+  
+  .works-item{
+    width: 40%;
+    flex-basis: 30%;
+    flex-grow: 1;
+    margin: 15px;
+    /* border: 1px solid red; */
+  }
+  
+  
+  
+  .works-item .mask{
+    width: 100%;
+    /* height: 350px; */
+    overflow: hidden;
+    border-radius: 7px;
+    box-shadow: 0px 5px 15px #ddd;
+    border: 1px solid #ddd;
+  }
+  
+  .works-item img{
+    width: 100%;
+    transition: all 500ms;
+  }
+  
+  /* .works-item .mask:hover img{
+    width: 150%;
+    margin-right: 30%;
+  } */
+  
+  .works-item span{
+    display: block;
+    color:#777;
+    margin-top: 5px;
+    /* margin-bottom: -2px; */
+    font-size: 15px;
+    /* font-style: italic; */
+  }
+  
+  .works-item h2{
+    font-family: "Montserrat Bold";
+    display: block;
+    font-size: 20px;
+    color: black;
+    /* margin-top: 5px;
+    margin-bottom: 2px; */
+  }
+  
+  .works-item > h2 >a {
+    text-decoration: none;
+    color: black;
+    /* text-transform: uppercase; */
+  }
+  
+  .works-item a:hover{
+    color: #3f888f;
+  }
+  
+  .works-item h3{
+    display: block;
+    color: #777;
+    font-size: 15px;
+    margin-top: 0px;
+    border-top: 1px solid #ddd;
+    padding: 5px;
+  }
+
+  .page-work .mask{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 7px;
+    box-shadow: 0px 5px 15px #ddd;
+    border: 1px solid #ddd;
+  }
+  
+  .page-work .mask img{
+    width: 120%;
+  }
+  
+  .boton{
+    display: block;
+    width: 80px;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+    color: white;
+    background-color: #3f888f;
+    border-radius: 7px;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all 300ms;
+  }
+  
+  .boton:hover{
+    background-color: coral;
+  }

@@ -1,0 +1,22 @@
+{% extends 'layouts/base.html' %} {% load static %} {% block title %} {{title}}
+{%endblock %} {% block content %}
+
+<div class="cont_info">
+  <div class="header-title">
+    <h1>{{title}}</h1>
+    <div class="add">+</div>
+  </div>
+  <form action="{% url 'save_client' %}" method="POST" class="formulario">
+    {% csrf_token %}
+    <div class="box-form">
+      <label for="name">Nombre</label>
+      <input type="text " />
+    </div>
+    <div class="box-form">
+      <label for="image">Imagen</label>
+      <input type="file" />
+    </div>
+    <input type="submit" value="Crear" class="btn btn-add" />
+  </form>
+</div>
+{% endblock %}

@@ -1,3 +1,11 @@
 from django.shortcuts import render
+from .models import Portafolio
 
-# Create your views here.
+def portafolio(request):
+
+    portafolio = Portafolio.objects.all()
+
+    return render(request, "portafolio.html", {
+        'title':'Portafolio' ,
+        'portafolio': portafolio
+    })

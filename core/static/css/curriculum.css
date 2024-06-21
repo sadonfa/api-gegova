@@ -1,0 +1,78 @@
+
+.info_curr{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .info_curr .educacion,
+  .info_curr .experiencia,
+  .info_curr .conocimientos,
+  .info_curr .logros{
+    flex-basis: 35%;
+    flex-grow: 1;
+    min-height: 100px;
+    padding: 15px 25px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 7px 0px #bbb;
+    /* border: 1px solid #bbb; */
+  }
+
+  .info_curr .educacion hr,
+  .info_curr .experiencia hr,
+  .info_curr .conocimientos hr,
+  .info_curr .logros hr{
+    padding: 2px;
+    background-color: #ffcc00;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+
+  .conocimientos ul,
+  .logros ul,
+  .educacion ul,
+  .experiencia ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8px;
+    justify-content: space-between;
+ } 
+
+ .conocimientos ul li,
+ .logros ul li,
+ .educacion ul li,
+ .experiencia ul li{
+    flex-basis: 45%;
+    flex-flow: 1;
+    list-style: none;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    font-family: "Montserrat";
+    font-size: 14px;
+ }
+
+ .conocimientos a,
+ .logros a,
+ .educacion a,
+ .experiencia a{
+    text-decoration: none;
+    color: #000;
+    transition: all 250ms;
+    cursor: pointer;
+ }
+
+
+ .conocimientos a:hover,
+ .logros a:hover,
+ .educacion a:hover,
+ .experiencia a:hover{
+    color: #ffcc00;
+ }

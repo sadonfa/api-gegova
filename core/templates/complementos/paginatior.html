@@ -1,0 +1,25 @@
+<div class="pagination">
+  {% if clients.has_previous %}
+
+  <a href="?page=1"><i class="fa-solid fa-angles-left"></i></a>
+  <a href="?page={{ clients.previous_page_number }}"
+    ><i class="fa-solid fa-angle-left"></i
+  ></a>
+
+  {% endif %}
+
+  <span class="actual">
+    <span class="n-page">{{clients.number}}</span>
+    <span class="n-page"> {{clients.paginator.num_pages}} </span>
+  </span>
+
+  {% if clients.has_next %}
+  <a href="?page={{ clients.next_page_number }}"
+    ><i class="fa-solid fa-angle-right"></i
+  ></a>
+  <a href="?page={{clients.paginator.num_pages}}">
+    <i class="fa-solid fa-angles-right"></i
+  ></a>
+
+  {% endif %}
+</div>

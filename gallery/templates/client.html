@@ -1,0 +1,24 @@
+{% extends 'layouts/base.html' %} {% load static %} {% comment %} titulo de la
+pagina {% endcomment %} {% block title %} {{title}}{%endblock %} {% comment %}
+contendio de la pagina {% endcomment %} {% block content %}
+
+<div class="cont_info">
+  <div class="header-title">
+    <h1>{{title}}</h1>
+    <div class="add">+</div>
+  </div>
+
+  <div class="box-pag">
+    {% for gallery in galleries %}
+
+    <div class="box-client">
+      <img src="{{gallery.image.url}}" alt="{{gallery.name}}" />
+      <div class="detail-pag">
+        <h3>{{gallery.name}}</h3>
+        <h4>{{gallery.image.url}}</h4>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

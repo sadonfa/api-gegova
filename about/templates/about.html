@@ -1,0 +1,29 @@
+{% extends 'layouts/base.html' %} {% block title %} {{title}} {% endblock %}
+{%block content %} {% load static %}
+
+<div class="cont_info">
+  <h1>about me</h1>
+  <h3>
+    Yo soy, <strong> Gerlin Gonzalez</strong>, Administrador de sistemas /
+    Desarrollador Web
+  </h3>
+  <p>
+    Ofrezco mis servicios de
+    <strong>programador y desarrollador</strong> en todo tipo de proyecto web.
+    Te ayudo a crear tu sitio o aplicacion web, para tener mas visibilidad y
+    relevancia en internet.
+  </p>
+  <div class="tecnology">
+    {% for about in abouts %}
+    <article class="item-tec">
+      <i class="{{about.icono}}"></i>
+      <div class="item-info">
+        <h2>{{about.title}}</h2>
+        <p>{{about.info}}</p>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock %}
