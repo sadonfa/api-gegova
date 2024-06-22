@@ -23,6 +23,7 @@
   cursor: pointer;
 }
 
+.box-pag,
 .box-gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -31,12 +32,12 @@
   margin-top: 25px;
 }
 
-/* .box-pag{
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    border: 1px solid red; 
+/* .box-pag {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  border: 1px solid red;
 } */
 
 .box-client {
@@ -129,4 +130,24 @@
 .formulario .btn-add {
   display: block;
   margin-top: 15px !important;
+}
+
+.box-client .detail-pag {
+  display: flex;
+  flex-direction: column;
+  height: 15%;
+  width: 98%;
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+.box-client .detail-pag h3 {
+  margin-top: 0px;
+  font-size: 15px;
+  padding: 0px;
+}
+
+.box-client .detail-pag span {
+  margin-top: 0px;
+  font-size: 10px;
 }
