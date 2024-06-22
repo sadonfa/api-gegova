@@ -147,7 +147,8 @@
   padding: 0px;
 }
 
-.box-client .detail-pag span {
+.box-client .detail-pag p {
   margin-top: 0px;
   font-size: 10px;
+  color: #222;
 }
